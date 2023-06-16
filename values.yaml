@@ -1,4 +1,8 @@
 minio:
+  resources:
+    requests:
+      cpu: 4000m
+      memory: 16Gi
   auth:
     rootUser: admin
     rootPassword: Passw0rd
@@ -12,7 +16,11 @@ minio:
     ports:
       api: 9000
       console: 8080
+  mode: distributed
 nginx:
+  resources:
+    requests:
+      cpu: 1000m
   service:
     type: ClusterIP
   extraVolumes:
