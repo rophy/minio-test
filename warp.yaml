@@ -16,7 +16,7 @@ spec:
         - /warp
         - get
         - --insecure
-        - --host=mt-nginx:8080
+        - --host=mt-nginx
         - --bucket=test
         - --access-key=admin
         - --secret-key=Passw0rd

@@ -5,6 +5,13 @@ minio:
   persistence:
     enabled: true
     size: 20Gi
+  containerPorts:
+    api: 9000
+    console: 8080
+  service:
+    ports:
+      api: 9000
+      console: 8080
 nginx:
   service:
     type: ClusterIP
