@@ -1,0 +1,9 @@
+{{ $files := .Files }}
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: configs
+  labels:
+    name: configs
+data:
+  {{- (tpl ((.Files.Glob "files/**").AsConfig) . ) | nindent 2 }}
