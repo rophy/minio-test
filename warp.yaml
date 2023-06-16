@@ -15,7 +15,7 @@ spec:
         image: minio/warp:v0.7.3
         resources:
           requests:
-            cpu: 4000m
+            cpu: 8000m
             memory: 8Gi
         command:
         - /warp
@@ -25,4 +25,4 @@ spec:
         - --access-key=admin
         - --secret-key=Passw0rd
         - --obj.size=10KiB
-        - --concurrent=1000
+        - --concurrent=5000
