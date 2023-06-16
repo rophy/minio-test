@@ -2,6 +2,9 @@ minio:
   auth:
     rootUser: admin
     rootPassword: Passw0rd
+  persistence:
+    enabled: true
+    size: 20Gi
 nginx:
   service:
     type: ClusterIP
