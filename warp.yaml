@@ -21,3 +21,4 @@ spec:
         - --access-key=admin
         - --secret-key=Passw0rd
         - --obj.size=10KiB
+        - --concurrent=1000
