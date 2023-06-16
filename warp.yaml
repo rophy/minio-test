@@ -1,0 +1,22 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: warp
+spec:
+  backoffLimit: 0
+  template:
+    metadata:
+      name: warp
+    spec:
+      restartPolicy: Never
+      containers:
+      - name: warp
+        image: minio/warp:v0.7.3
+        command:
+        - /warp
+        - get
+        - --insecure
+        - --host=nginx:9000
+        - --bucket=test
+        - --access-key=admin
+        - --secret-key=Passw0rd

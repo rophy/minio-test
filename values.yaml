@@ -2,6 +2,9 @@ minio:
   auth:
     rootUser: admin
     rootPassword: Passw0rd
+nginx:
+  service:
+    type: ClusterIP
   extraVolumes:
   - name: nginx-config
     configMap:
@@ -10,6 +13,3 @@ minio:
   - name: nginx-config
     mountPath: /opt/bitnami/nginx/conf/nginx.conf
     subPath: nginx.conf
-nginx:
-  service:
-    type: ClusterIP
