@@ -2,6 +2,7 @@ apiVersion: batch/v1
 kind: Job
 metadata:
   name: warp
+  namespace: devns6
 spec:
   backoffLimit: 0
   template:
@@ -17,6 +18,6 @@ spec:
         - get
         - --insecure
         - --host=mt-nginx
-        - --bucket=test
         - --access-key=admin
         - --secret-key=Passw0rd
+        - --obj.size=10KiB
