@@ -1,0 +1,7 @@
+minio:
+  auth:
+    rootUser: admin
+    rootPassword: Passw0rd
+nginx:
+  service:
+    type: ClusterIP

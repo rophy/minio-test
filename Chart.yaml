@@ -1,0 +1,9 @@
+name: minio-test
+version: 1.0.0
+dependencies:
+- name: minio
+  repository: https://charts.bitnami.com/bitnami
+  version: 12.6.4
+- name: nginx
+  repository: https://charts.bitnami.com/bitnami
+  version: 15.0.2

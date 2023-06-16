@@ -1,19 +1,7 @@
-repositories:
- - name: bitnami
-   url: https://charts.bitnami.com/bitnami
-
 helmDefaults:
   createNamespace: false
 
 releases:
-- name: minio
+- name: mt
   namespace: devns6
-  chart: bitnami/minio
-  version: 12.6.4
-- name: nginx
-  namespace: devns6
-  chart: bitnami/nginx
-  version: 15.0.2
-  values:
-  - service:
-      type: ClusterIP
+  chart: .

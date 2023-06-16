@@ -1,0 +1,9 @@
+dependencies:
+- name: minio
+  repository: https://charts.bitnami.com/bitnami
+  version: 12.6.4
+- name: nginx
+  repository: https://charts.bitnami.com/bitnami
+  version: 15.0.2
+digest: sha256:33ed088710512449d81e289669b9805d257df106098ec59cbd8fdea6342ebe75
+generated: "2023-06-16T19:39:11.662295347+08:00"
